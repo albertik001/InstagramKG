@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/likesFragment"
+    android:id="@+id/navigation">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.geektech.instagramkg.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/likesFragment"
+        android:name="com.geektech.instagramkg.ui.fragments.LikesFragment"
+        android:label="fragment_likes"
+        tools:layout="@layout/fragment_likes" />
+    <fragment
+        android:id="@+id/usersFragment"
+        android:name="com.geektech.instagramkg.ui.fragments.UsersFragment"
+        android:label="fragment_users"
+        tools:layout="@layout/fragment_users" />
+</navigation>
