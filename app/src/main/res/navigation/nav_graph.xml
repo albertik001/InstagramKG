@@ -9,7 +9,11 @@
         android:id="@+id/homeFragment"
         android:name="com.geektech.instagramkg.ui.fragments.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_usersFragment"
+            app:destination="@id/usersFragment" />
+    </fragment>
     <fragment
         android:id="@+id/likesFragment"
         android:name="com.geektech.instagramkg.ui.fragments.LikesFragment"
