@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/image_start_likes"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginStart="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,18 +18,18 @@
         android:id="@+id/text_likes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
-        android:text="karennne liked your photo. 1h"
+        android:layout_marginEnd="72dp"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/image_end_likes"
-        app:layout_constraintStart_toStartOf="@+id/image_start_likes"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="52dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/image_end_likes"
+        app:layout_constraintStart_toEndOf="@+id/image_start_likes"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
     <ImageView
         android:id="@+id/image_end_likes"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

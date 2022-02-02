@@ -1,10 +1,182 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.fragments.UsersFragment">
 
+    <TextView
+        android:id="@+id/username_instagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="KylieJenner"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:src="@drawable/image_insta_verfic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/username_instagram"
+        app:layout_constraintTop_toTopOf="@id/username_instagram"
+        app:layout_constraintStart_toEndOf="@id/username_instagram"
+        android:layout_width="20dp"
+        android:layout_marginEnd="120dp"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:id="@+id/container_users_profiles"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/username_instagram">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/container_users_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/photo_profile"
+                android:layout_width="86dp"
+                android:layout_height="86dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/username_instagram_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:text="KylieJenner"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/photo_profile"
+                app:layout_constraintStart_toStartOf="@id/photo_profile"
+                app:layout_constraintTop_toBottomOf="@id/photo_profile" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="208dp"
+                android:text="kyliecosmetics @kylieskin \n@kylieswim @kyliebaby"
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@id/username_instagram_profile"
+                app:layout_constraintTop_toBottomOf="@id/username_instagram_profile" />
+
+            <TextView
+                android:id="@+id/number_posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="44dp"
+                android:text="54"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/photo_profile"
+                app:layout_constraintStart_toEndOf="@id/photo_profile"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="posts"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/number_posts"
+                app:layout_constraintStart_toStartOf="@id/number_posts"
+                app:layout_constraintTop_toTopOf="@id/number_posts" />
 
 
-</FrameLayout>
+            <TextView
+                android:id="@+id/number_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="76dp"
+                android:text="800"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/number_posts"
+                app:layout_constraintStart_toStartOf="@id/number_posts" />
+
+            <TextView
+                android:id="@+id/text_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Followers"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/number_followers"
+                app:layout_constraintStart_toStartOf="@id/number_followers"
+                app:layout_constraintTop_toTopOf="@id/number_followers" />
+
+            <TextView
+                android:id="@+id/number_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="96dp"
+                android:text="0"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/number_followers"
+                app:layout_constraintStart_toStartOf="@id/number_followers" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Following"
+                android:textColor="@color/black"
+                app:layout_constraintEnd_toEndOf="@id/number_following"
+                app:layout_constraintStart_toStartOf="@id/number_following"
+                app:layout_constraintTop_toTopOf="@id/number_following" />
+
+            <Button
+                android:layout_width="340dp"
+                android:layout_height="44dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/btn_back"
+                android:backgroundTint="@color/gray"
+                android:text="Edit Profile"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/container_users_profile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/container_users_profiles" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pagers"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+
+<!--
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
