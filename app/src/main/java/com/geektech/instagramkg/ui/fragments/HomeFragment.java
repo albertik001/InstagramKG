@@ -34,8 +34,10 @@ public class HomeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        adapter = new HomesAdapter(loadData(), getContext());
+        adapter = new HomesAdapter();
         binding.recyclerHome.setAdapter(adapter);
+        adapter.setList(loadData());
+
     }
 
     private ArrayList<Model> loadData() {

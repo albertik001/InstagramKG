@@ -21,7 +21,7 @@ public class LikesAdapter extends RecyclerView.Adapter<LikesAdapter.ViewHolder> 
     private Context context;
     ArrayList<Model> likeModel;
 
-    public LikesAdapter(Context context, ArrayList<Model> likeModel) {
+        public LikesAdapter(Context context, ArrayList<Model> likeModel) {
         this.context = context;
         this.likeModel = likeModel;
     }
