@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidGeek/UI/InstagramKG/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.17962962962962964" />
         <entry key="..\:/AndroidGeek/UI/InstagramKG/app/src/main/res/drawable/btn_back.xml" value="0.2962962962962963" />
         <entry key="..\:/AndroidGeek/UI/InstagramKG/app/src/main/res/drawable/ic_camera.xml" value="0.32685185185185184" />
         <entry key="..\:/AndroidGeek/UI/InstagramKG/app/src/main/res/drawable/ic_favorites.xml" value="0.32685185185185184" />
@@ -17,7 +18,7 @@
         <entry key="..\:/AndroidGeek/UI/InstagramKG/app/src/main/res/layout/fragment_likes.xml" value="0.25" />
         <entry key="..\:/AndroidGeek/UI/InstagramKG/app/src/main/res/layout/fragment_tab_layout_users.xml" value="0.33" />
         <entry key="..\:/AndroidGeek/UI/InstagramKG/app/src/main/res/layout/fragment_users.xml" value="0.33" />
-        <entry key="..\:/AndroidGeek/UI/InstagramKG/app/src/main/res/layout/item_home.xml" value="0.5" />
+        <entry key="..\:/AndroidGeek/UI/InstagramKG/app/src/main/res/layout/item_home.xml" value="0.25" />
         <entry key="..\:/AndroidGeek/UI/InstagramKG/app/src/main/res/layout/item_likes.xml" value="0.25" />
         <entry key="..\:/AndroidGeek/UI/InstagramKG/app/src/main/res/layout/item_post.xml" value="0.25" />
         <entry key="..\:/AndroidGeek/UI/InstagramKG/app/src/main/res/layout/item_tab_photo.xml" value="0.36666666666666664" />

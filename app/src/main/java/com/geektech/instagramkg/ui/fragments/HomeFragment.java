@@ -41,9 +41,12 @@ public class HomeFragment extends Fragment {
     private ArrayList<Model> loadData() {
         homesList = new ArrayList<>();
         for (int i = 0; i < 999; i++) {
-            homesList.add(new Model("Music is the soul of language.", "https://icdn.lenta.ru/images/2021/08/12/11/20210812115738455/square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg"));
-            homesList.add(new Model("Music is the soul of language.", "https://www.pinkvilla.com/files/styles/gallery-preview/public/kylie_jenner_selfie_1.jpg?itok=DuUjaoaP"));
-            homesList.add(new Model("Music is the soul of language.", "https://www.cosmopolitanme.com/cloud/2021/09/09/60939868_356233055029032_2727987522876590928_n.jpg"));
+            homesList.add(new Model("Music is the soul of language.\nSeptember", "https://icdn" +
+                    ".lenta.ru/images/2021/08/12/11/20210812115738455/square_1280_80d09ab54a22fa12c053a3c1cb7d0359.jpg"));
+            homesList.add(new Model("Music is the soul of language.", "https://www.pinkvilla.com/files/styles/gallery-p" +
+                    "review/public/kylie_jenner_selfie_1.jpg?itok=DuUjaoaP"));
+            homesList.add(new Model("Music is the soul of language.", "https://www.cosmopolitanme.com/cloud/2021/09/09/60939" +
+                    "868_356233055029032_2727987522876590928_n.jpg"));
         }
         return homesList;
     }

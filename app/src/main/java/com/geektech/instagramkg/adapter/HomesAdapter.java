@@ -42,7 +42,7 @@ public class HomesAdapter extends RecyclerView.Adapter<HomesAdapter.ViewHolder> 
         return homeModel.size();
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public static class     ViewHolder extends RecyclerView.ViewHolder {
         private ItemHomeBinding binding;
 
         public ViewHolder(@NonNull ItemHomeBinding itemView) {
