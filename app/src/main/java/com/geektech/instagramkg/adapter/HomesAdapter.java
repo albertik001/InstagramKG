@@ -57,7 +57,7 @@ public class HomesAdapter extends RecyclerView.Adapter<HomesAdapter.ViewHolder> 
     public static class  ViewHolder extends RecyclerView.ViewHolder {
         private ItemHomeBinding binding;
 
-        public ViewHolder(@NonNull ItemHomeBinding itemView) {
+            public ViewHolder(@NonNull ItemHomeBinding itemView) {
             super(itemView.getRoot());
             binding = itemView;
         }
